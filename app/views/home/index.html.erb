@@ -1,0 +1,18 @@
+balance: <%= @balance %>
+<%= @addreses %>
+<a href="/new_address">New Address</a>
+<form action="/new_address" method="get">
+  <div class="field">
+    <label for="name">Name</label><br>
+    <input id="name" name="new_address[name]" type="text">
+  </div>
+  <div class="field">
+    <label for="label">Label</label><br>
+    <input id="label" name="new_address[label]" type="text">
+  </div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Create Address">
+  </div>
+</form>
+<a href="/new_address">New Address</a> 
+<a href="/quick_send">send 0.0001 BTC</a>
